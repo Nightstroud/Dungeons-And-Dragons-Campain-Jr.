@@ -3,10 +3,35 @@
 <head>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="icon" href="../resources/Selection%20Icon.png">
+    <link rel="stylesheet" href="../css/background_style.css">
+    <link rel="stylesheet" href="../css/header_style.css">
+    <link rel="stylesheet" href="../css/card_style.css">
+    <link rel="stylesheet" href="../css/modal_style.css">
+    <script type="text/javascript" src="../javascript/createCard.js" defer></script>
     <meta charset="UTF-8">
     <title>Elemental Alignment</title>
 </head>
 <body>
+
+    <div id="background"></div>
+
+    <div id="container">
+        <div id="headerBar" onclick="GetCardDetails()">Add New Alignment</div>
+        <div id="cardContainer">
+
+        </div>
+    </div>
+
+    <div id="modalContainer">
+        <div id="modal">
+            <p>Input the title of new Alignment</p>
+            <input type="text" value="" id="cardTitle">
+            <p>Input the img name you would like to use.</p>
+            <input type="text" value="" id="cardImage">
+            <button onclick="AlignmentCards.createCard(document.getElementById('cardTitle').value, document.getElementById('cardImage').value); document.getElementById('modalContainer').style.display = 'none';">Submit</button>
+        </div>
+    </div>
 
 </body>
 </html>
