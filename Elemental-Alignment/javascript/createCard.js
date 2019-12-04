@@ -18,7 +18,7 @@ class Card {
     }
 
     displayCards() {
-        document.getElementById("cardContainer").innerHTML += "";
+        document.getElementById("cardContainer").innerHTML = "";
         this.cards.forEach(card => {
             document.getElementById("cardContainer").innerHTML += card;
         });
