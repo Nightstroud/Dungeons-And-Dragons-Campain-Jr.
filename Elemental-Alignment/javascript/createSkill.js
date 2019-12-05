@@ -10,6 +10,7 @@ class Skill {
     createSkill(name, lvl, cost) {
         let skill = `
             <div class="rowType1">
+                <div class="number"></div>
                 <div class="title">${name}</div>
                 <div class="lvl">${lvl}</div>
                 <div class="upgradeCost">${cost}</div>
@@ -26,6 +27,7 @@ class Skill {
         let perkStore = document.getElementById("perkStore");
         perkStore.innerHTML = `
         <div id="headerRow" class="rowType2">
+                <div class="number">num</div>
                 <div class="title">Title: ${selectedAlignment}</div>
                 <div class="lvl">Level</div>
                 <div class="upgradeCost">Upgrade Cost</div>
@@ -41,6 +43,10 @@ class Skill {
                 x = false;
             }
             else x = true;
+        }
+
+        for (let i = 1; i < placeHolder.length; i++) {
+            placeHolder[i].children[0].innerHTML = i.toString() + ".";
         }
         perkStore.innerHTML += `<div id="footerRow" onclick="document.getElementById('createSkillModal').style.display = 'flex';">Create New Skill</div>`;
         localStorage.setItem(selectedAlignment.toString(), JSON.stringify(this.object));

@@ -38,7 +38,7 @@
 }
 
 .title {
-    width: 80%;
+    width: 75%;
     height: 20px;
     color: black;
     border-right: black solid 1px;
@@ -75,4 +75,14 @@
     border: black solid 1px;
     margin: 10px 0 0 0;
     border-radius: 20px;
+}
+
+.number {
+    width: 5%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    border-right: black solid 1px;
 }
