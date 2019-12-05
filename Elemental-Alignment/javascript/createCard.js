@@ -1,4 +1,5 @@
 let selectedAlignment = null;
+let skillStore;
 class Card {
     constructor() {
         this.cards = JSON.parse(localStorage.getItem("CARDS"));
@@ -9,7 +10,7 @@ class Card {
 
     createCard(name, url) {
         let card = `
-        <div class="card" onclick="setSelection('${name}')">
+        <div class="card" onclick="setSelection('${name}');">
                 <img src="../resources/${url}.png">
                 <p>${name}</p>
             </div>`;
@@ -41,7 +42,8 @@ function GetCardDetails() {
 function setSelection(selection) {
     selectedAlignment = selection;
     document.getElementById("container").style.display = 'none';
-    // createSkillStore();
+    document.getElementById('perkStore').style.display = 'flex';
+    skillStore = new Skill();
 }
 
 AlignmentCards.displayCards();

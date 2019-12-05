@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="../css/header_style.css">
     <link rel="stylesheet" href="../css/card_style.css">
     <link rel="stylesheet" href="../css/modal_style.css">
+    <link rel="stylesheet" href="../css/perk_store_style.css">
+    <link rel="stylesheet" href="../css/create_skill_style.css">
     <script type="text/javascript" src="../javascript/createCard.js" defer></script>
+    <script type="text/javascript" src="../javascript/createSkill.js" defer></script>
     <meta charset="UTF-8">
     <title>Elemental Alignment</title>
 </head>
@@ -30,6 +33,32 @@
             <p>Input the img name you would like to use.</p>
             <input type="text" value="" id="cardImage">
             <button onclick="AlignmentCards.createCard(document.getElementById('cardTitle').value, document.getElementById('cardImage').value); document.getElementById('modalContainer').style.display = 'none';">Submit</button>
+        </div>
+    </div>
+
+    <div id="perkStore">
+            <div id="headerRow" class="rowType2">
+                <div class="title">Title</div>
+                <div class="lvl">Level</div>
+                <div class="upgradeCost">Upgrade Cost</div>
+            </div>
+            <div class="rowType1">
+                <div class="title">Title</div>
+                <div class="lvl">Level</div>
+                <div class="upgradeCost">Upgrade Cost</div>
+            </div>
+            <div id="footerRow" onclick="document.getElementById('createSkillModal').style.display = 'flex';">Create New Skill</div>
+    </div>
+
+    <div id="createSkillModal">
+        <div id="createSkillContainer">
+            <p>Give the title for the new skill.</p>
+            <input type="text" id="skillName" value="">
+            <p>Give the level of the skill.</p>
+            <input type="text" id="skillLevel" value="">
+            <p>Give the cost to upgrade the skill.</p>
+            <input type="text" id="skillCost" value="">
+            <button onclick="skillStore.createSkill(document.getElementById('skillName').value, document.getElementById('skillLevel').value, document.getElementById('skillCost').value); document.getElementById('createSkillModal').style.display = 'none'; document.getElementById('skillName').value = ''; document.getElementById('skillLevel').value = ''; document.getElementById('skillCost').value = '';">Create Skill</button>
         </div>
     </div>
 
