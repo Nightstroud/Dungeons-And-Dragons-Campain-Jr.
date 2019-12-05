@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/modal_style.css">
     <link rel="stylesheet" href="../css/perk_store_style.css">
     <link rel="stylesheet" href="../css/create_skill_style.css">
+    <link rel="stylesheet" href="../css/skill_details_style.css">
     <script type="text/javascript" src="../javascript/createCard.js" defer></script>
     <script type="text/javascript" src="../javascript/createSkill.js" defer></script>
     <meta charset="UTF-8">
@@ -58,7 +59,16 @@
             <input type="text" id="skillLevel" value="">
             <p>Give the cost to upgrade the skill.</p>
             <input type="text" id="skillCost" value="">
-            <button onclick="skillStore.createSkill(document.getElementById('skillName').value, document.getElementById('skillLevel').value, document.getElementById('skillCost').value); document.getElementById('createSkillModal').style.display = 'none'; document.getElementById('skillName').value = ''; document.getElementById('skillLevel').value = ''; document.getElementById('skillCost').value = '';">Create Skill</button>
+            <p>Give the details of how the skill works.</p>
+            <input type="text" id='skillDetail' value="">
+            <button onclick="skillStore.createSkill(document.getElementById('skillName').value, document.getElementById('skillLevel').value, document.getElementById('skillCost').value, document.getElementById('skillDetail').value); document.getElementById('createSkillModal').style.display = 'none'; document.getElementById('skillName').value = ''; document.getElementById('skillLevel').value = ''; document.getElementById('skillCost').value = ''; document.getElementById('skillDetail').value = '';">Create Skill</button>
+        </div>
+    </div>
+
+    <div id="skillDetailsModal">
+        <div id="skillDetailsContainer">
+            <p id="skillsDetails">asd</p>
+            <button onclick="document.getElementById('skillDetailsModal').style.display = 'none';">Close Details Screen</button>
         </div>
     </div>
 

@@ -7,9 +7,9 @@ class Skill {
         this.renderSkills();
     }
 
-    createSkill(name, lvl, cost) {
+    createSkill(name, lvl, cost, skillstring) {
         let skill = `
-            <div class="rowType1">
+            <div class="rowType1" onclick="document.getElementById('skillsDetails').innerHTML = '${skillstring}'; document.getElementById('skillDetailsModal').style.display = 'flex';">
                 <div class="number"></div>
                 <div class="title">${name}</div>
                 <div class="lvl">${lvl}</div>
