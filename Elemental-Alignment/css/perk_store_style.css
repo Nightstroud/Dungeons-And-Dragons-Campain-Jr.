@@ -1,7 +1,6 @@
 #perkStore {
     width: 90%;
-    margin: 0;
-    padding: 0;
+    margin: 40px 0 0 0;
     background-image: url("../resources/ParchmentPaper.jpg");
     background-size: cover;
     border: solid whitesmoke 5px;
@@ -13,6 +12,7 @@
     align-items: center;
     flex-direction: column;
     background-repeat: repeat;
+    padding: 20px 0;
 }
 
 .rowType1 {
@@ -73,7 +73,7 @@
     justify-content: center;
     align-items: center;
     border: black solid 1px;
-    margin: 10px 0 0 0;
+    margin: 50px 0 0 0;
     border-radius: 20px;
 }
 
