@@ -12,8 +12,8 @@ class Skill {
             <div class="rowType1" onclick="document.getElementById('skillsDetails').innerHTML = '${skillstring}'; document.getElementById('skillDetailsModal').style.display = 'flex';">
                 <div class="number"></div>
                 <div class="title">${name}</div>
-                <div class="lvl">${lvl}</div>
-                <div class="upgradeCost">${cost}</div>
+                <div class="lvl">${lvl}.</div>
+                <div class="upgradeCost">${cost} Points</div>
             </div>`;
         this.object.push(skill);
         if (this.lastSkill === 'rowType1') {
@@ -50,6 +50,14 @@ class Skill {
         }
         perkStore.innerHTML += `<div id="footerRow" onclick="document.getElementById('createSkillModal').style.display = 'flex';">Create New Skill</div>`;
         localStorage.setItem(selectedAlignment.toString(), JSON.stringify(this.object));
+    }
+
+    changeSkill(skillId, location) {
+        let firstSkill = this.object[(skillId - 1)];
+        let secondSkill = this.object[(location - 1)];
+        this.object[location - 1] = firstSkill;
+        this.object.splice(skillId - 1, 1, secondSkill);
+        this.renderSkills();
     }
 
     deleteSkill(id) {
