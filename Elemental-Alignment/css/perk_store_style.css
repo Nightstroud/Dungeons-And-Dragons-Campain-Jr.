@@ -19,7 +19,7 @@
     width: 90%;
     border: black solid 1px;
     height: 20px;
-    background-color: #ffddad;
+    background-color: rgba(100, 100, 100, 1);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -34,7 +34,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: row;
-    background-color: #e08300;
+    background-color: rgba(150, 150, 150, 1);
 }
 
 .title {
