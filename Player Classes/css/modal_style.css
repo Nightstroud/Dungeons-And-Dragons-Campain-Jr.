@@ -1,0 +1,22 @@
+#modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: darkblue;
+    border: solid white 1px;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+}
+
+#modal button {
+    background-color: darkgray;
+    border-radius: 50px;
+    margin-top: 20px;
+    color: black;
+}
+
+#modal input {
+    color: black;
+}
