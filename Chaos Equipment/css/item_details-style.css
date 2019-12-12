@@ -1,0 +1,31 @@
+#itemDetailsContainer {
+    width: 500px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+}
+
+#itemDetailsContainer p {
+    margin: 10px 0;
+    color: black;
+}
+
+#itemDetailsContainer input {
+    color: black;
+}
+
+#itemDetailsContainer select {
+    color: black;
+}
+
+#itemDetailsContainer button {
+    color: black;
+    margin-top: 20px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="../css/background_style.css">
+    <link rel="stylesheet" href="../css/storage_style.css">
+    <link rel="stylesheet" href="../css/item_details-style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../javascript/item_storage.js" defer></script>
+    <script src="../javascript/global_values.js" defer></script>
+    <meta charset="UTF-8">
+    <title>Chaos Equipment</title>
+<body>
+
+    <div id="background"></div>
+
+    <div id="itemStorage">
+        <div id="itemStorageBox">
+            <div class="itemTitleRow">
+                <div class="itemTitle">Title</div>
+                <div class="itemRarity">Rarity</div>
+                <div class="itemValue">Value</div>
+                <div class="itemAmount">Amount</div>
+            </div>
+            <div class="itemRow">
+                <div class="number">1.</div>
+                <div class="itemTitle">Title</div>
+                <div class="itemRarity">Rarity</div>
+                <div class="itemValue">Value</div>
+                <div class="itemAmount">Amount</div>
+            </div>
+            <div class="button" onclick="document.getElementById('itemDetails').style.display = 'flex'">Add Item</div>
+        </div>
+    </div>
+
+    <div id="itemDetails">
+        <div id="itemDetailsContainer">
+            <p>Please relay the Items Title</p>
+            <input id="itemTitle" type="text" value="">
+            <p>Please relay the Items Rarity</p>
+            <select id="itemRarity">
+                <option value="Common">Common</option>
+                <option value="Uncommon">Uncommon</option>
+                <option value="Rare">Rare</option>
+                <option value="UltraRare">Ultra Rare</option>
+                <option value="Mythic">Mythic</option>
+                <option value="Legendary">Legendary</option>
+                <option value="Artifact">Artifact</option>
+            </select>
+            <p>Please relay the Items Value</p>
+            Copper Pieces: <input id="CP" type="text" value="">
+            Silver Pieces: <input id="SP" type="text" value="">
+            Gold Pieces: <input id="GP" type="text" value="">
+            Platinum Pieces: <input id="PP" type="text" value="">
+            Gold Crowns: <input id="GC" type="text" value="">
+            <p>What will be the total item amount?</p>
+            <select id="selection"></select>
+            <button onclick="SetValues(); itemStorage.addItem(itemTitle, itemRarity, itemValue, itemAmount); document.getElementById('itemDetails').style.display = 'none'">Finish</button>
+        </div>
+    </div>
+
+</body>
+</html>

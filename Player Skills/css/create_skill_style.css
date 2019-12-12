@@ -1,0 +1,41 @@
+#createSkillModal {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    z-index: 100;
+    align-items: center;
+}
+
+#createSkillContainer {
+    width: 800px;
+    height: 800px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+#skillCost {
+    color: black;
+}
+
+#skillLevel {
+    color: black;
+}
+
+#skillName {
+    color: black;
+}
+
+#createSkillContainer button {
+    color: black;
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    border-radius: 20px;
+}

@@ -1,0 +1,88 @@
+#perkStore {
+    width: 90%;
+    margin: 40px 0 0 0;
+    background-image: url("../resources/ParchmentPaper.jpg");
+    background-size: cover;
+    border: solid whitesmoke 5px;
+    border-radius: 10px;
+    z-index: 20;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: repeat;
+    padding: 20px 0;
+}
+
+.rowType1 {
+    width: 90%;
+    border: black solid 1px;
+    height: 20px;
+    background-color: rgba(100, 100, 100, 1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.rowType2 {
+    width: 90%;
+    border: black solid 1px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    background-color: rgba(150, 150, 150, 1);
+}
+
+.title {
+    width: 75%;
+    height: 20px;
+    color: black;
+    border-right: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lvl {
+    width: 10%;
+    height: 20px;
+    color: black;
+    border-right: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upgradeCost {
+    width: 10%;
+    height: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerRow {
+    width: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 1px;
+    margin: 50px 0 0 0;
+    border-radius: 20px;
+}
+
+.number {
+    width: 5%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    border-right: black solid 1px;
+}
