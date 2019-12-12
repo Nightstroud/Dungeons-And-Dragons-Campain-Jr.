@@ -1,6 +1,6 @@
 class ItemStorage {
     constructor() {
-        this.object = JSON.parse(localStorage.getItem("ITEMS"));
+        this.object = JSON.parse(localStorage.getItem("ITEMS1"));
         if (!this.object) {
             this.object = [];
         }
@@ -36,7 +36,7 @@ class ItemStorage {
         });
         let placeHolder = 1;
         itemStore.innerHTML += `<div class="button" onclick="document.getElementById('itemDetails').style.display = 'flex'">Add Item</div>`;
-        localStorage.setItem("ITEMS", JSON.stringify(this.object));
+        localStorage.setItem("ITEMS1", JSON.stringify(this.object));
         for (let i = 0; i < this.object.length; i++) {
             document.getElementsByClassName('number')[0].innerHTML = placeHolder + '.';
             placeHolder++;
